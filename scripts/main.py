@@ -558,7 +558,7 @@ def handle_reward_ad_flow(sb, identifier: str, console_url: str) -> bool:
     log(f"广告流程处理开始: {safe_id}")
 
     # 等待页面响应（最多 15 秒）
-    ad_flow_timeout = 15
+    ad_flow_timeout = 120
     start = time.time()
 
     while time.time() - start < ad_flow_timeout:
